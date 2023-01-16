@@ -16,3 +16,56 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+let alter;
+
+alter = prompt("Bitte Alter angeben:");
+
+if (alter >= 18)
+{
+    console.log("Ab diesem Alter darf man Wein trinken!")
+}
+else if (alter <=17 && alter >= 13);
+{
+    console.log("Coke");
+}
+else if (alter <=12 && alter >=6);
+{
+    console.log("Juice!");
+}
+
+else
+{
+    console.log("Im Alter von bis zu fünf Jahren empfehlen wir Milch.")
+}
+
+
+// isMilk = (alter <=5);
+// isJuice = (alter >5 && alter <=1)
+// if 
+
+
+// age = milkage = (alter <= 5);
+// age = wineage = (alter >=18);
+// age = cokeage = (alter <=17);
+// age = juiceage = (alter <=12);
+// // age = milkage = (alter <= 5);
+
+// // alter = "0+"
+
+// switch (age)
+// {
+//         case "milkage":
+//             console.log("Milch");
+//             break;
+//         case "juiceage":
+//             console.log("Saft");
+//             break;
+//         case "cokeage":
+//             console.log("Cola");
+//             break;
+//         case "wineage":
+//             console.log("Wein");
+//             break;
+// }
+
+// console.log("Beim Alter von " + alter + " empfehlen wir " + age)
