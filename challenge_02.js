@@ -16,10 +16,32 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
-let alter, name;
+let alter, nutzer;
 
-alter = prompt("Bitte Alter angeben:");
+alter = parseInt(prompt("Bitte Alter angeben:"));
 nutzer = prompt("Bitte Namen angeben:");
+
+switch (true)
+{
+        case (alter <=5):
+            console.log(nutzer +" trinkt Milch");
+            break;
+        case (alter >= 6 && alter <=12):
+            console.log(nutzer +" trinkt Saft");
+            break;
+        case (alter >=13 && alter <18):
+            console.log(nutzer +" trinkt Cola");
+            break;
+        case (alter >=18):
+            console.log(nutzer +" trinkt Wein");
+            break;
+        default:
+        console.log("Die Eingabe ist nicht korrekt!")
+            break;
+}
+
+
+
 
 //***********************V1 */
 // if (alter >= 18)
@@ -53,20 +75,3 @@ nutzer = prompt("Bitte Namen angeben:");
 // // age = milkage = (alter <= 5);
 
 // // // alter = "0+"
-
-switch (true)
-{
-        case (alter <=5):
-            console.log(nutzer +" trinkt Milch");
-            break;
-        case (alter >= 6 && alter <=12):
-            console.log(nutzer +" trinkt Saft");
-            break;
-        case (alter >=13 && alter <18):
-            console.log(nutzer +" trinkt Cola");
-            break;
-        case (alter >=18):
-            console.log(nutzer +" trinkt Wein");
-            break;
-}
-
